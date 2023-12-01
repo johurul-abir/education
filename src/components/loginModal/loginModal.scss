@@ -1,0 +1,87 @@
+
+.loginModal-blur{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-color: rgba(0,0, 0, 0.7);
+    .loginModal-repar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        .loginModal{
+            width: 500px;
+           .model-header{
+            display: flex;
+            justify-content: space-between;
+            button{
+                width: 30px;
+                height: 30px;
+                border: 1px solid white;
+                border-radius: 3px;
+                background-color: #ccc;
+                height:30px;
+                color: black;
+                transition: 0.3s all ease-in-out;
+                &:hover{
+                    background-color: red;
+                    color:white;
+                }
+            }
+           } 
+            ul{
+                display: flex;
+                column-gap: 20px;
+                padding: 20px 0px;
+            
+
+                li{
+                    width: 80px;
+                    height: 40px;
+                    background-color:  #09A3DF;
+                    text-align: center;
+                    line-height: 40px;
+                    font-size: 25px;
+                    border-radius: 5px;
+                    transition: 0.3s all ease-in-out;
+                    &:hover{
+                        background-color: #232665
+                    }
+                    a{
+                        color: white;
+                    }
+                }
+               
+            }
+            .login-info{
+                h3{
+                    font-size: 22px;
+                }
+                form{
+                    padding: 10px 0px;
+                }
+                .lost-pass{
+                    display: flex;
+                    justify-content: space-between;
+
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                .form-footer{
+                    display: flex;
+                    column-gap: 10px;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+            }
+            
+    }
+}
