@@ -26,7 +26,11 @@ const Header = () => {
                   <div className="navbar">
                     <ul>
                       <li className='navitem '><Link to="/" className={location.pathname==="/" ? "active" : ""} >Home</Link></li>
+                      
+                      <li className='navitem'><Link to="/hsc" className={location.pathname==="/hsc" ? "active" : ""}>HSC</Link></li>
+
                       <li className='navitem'><Link to="/course" className={location.pathname==="/course" ? "active" : ""}>Course</Link></li>
+
                       <li className='navitem'><Link to="/team" className={location.pathname==="/team" ? "active" : ""}>Team</Link></li>
                       <li className='navitem'><Link to="/about" className={location.pathname==="/about" ? "active" : ""}>About</Link></li>
                       <li className='navitem'><Link to="/contact" className={location.pathname==="/contact" ? "active" : ""}>Contact</Link></li>

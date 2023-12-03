@@ -8,6 +8,10 @@ import Blog from "../pages/blog/Blog";
 import SingleBlog from "../pages/blog/SingleBlog";
 import Layouts from "../components/layouts/Layouts";
 import Register from "../components/regster/Register";
+import Hsc from "../pages/hsc/Hsc";
+import HscScience from "../pages/hsc-science/HscScience";
+import HscCommerce from "../pages/hsc-commerce/HscCommerce";
+import HscArts from "../pages/hsc-arts/HscArts";
 
 const PublicRouter = [
 {
@@ -45,6 +49,24 @@ const PublicRouter = [
         {
             path: "/blog/:slug",
             element: <SingleBlog/>
+        },
+        {
+            path: "/hsc",
+            element: <Hsc/>,
+            children:[
+                {
+                    path: "science",
+                    element: <HscScience/>
+                },
+                {
+                    path: "commerce",
+                    element: <HscCommerce/>
+                },
+                {
+                    path: "arts",
+                    element: <HscArts/>
+                }
+            ]
         },
         {
             path: "/register",
