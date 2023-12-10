@@ -2,6 +2,7 @@
    
     background-color: #f0f8ff;
     height: 100vh;
+    scroll-behavior: smooth;
   
     .admin_menu{
         background-color: #09A3DF;
@@ -45,6 +46,41 @@
                     
                     .exam{
                         padding-top: 15px;
+
+                        .bcs{
+                            color: white;
+                            font-weight: 500;
+                            cursor: pointer;
+                            &:hover{
+                                transition: 0.4s all ease-in-out;
+                                & .bcs-list{
+                                    display: block;
+                                }
+                            }
+                            .bcs-list{
+                                background-color: white;
+                                margin-top: 10px;
+                                padding: 10px;
+                                border-radius: 5px;
+                                display: none;
+                                .bcs-list-item{
+                                    display: block;
+                                    margin-top: 5px;
+                                    padding: 10px;   
+                                    border-radius: 4px;
+                                    background-color: #528fa7;
+                                    &:hover{
+                                        background-color: #4ba2c4;
+                                        & a{
+                                            color: white;
+                                        }
+                                    }
+                                    a{
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 

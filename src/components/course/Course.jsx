@@ -23,7 +23,7 @@ const Course = () => {
                                             <h2>{item.title}</h2>
                                             <h5>{item.subtitle}</h5>
                                             <p>Class time: {item.time}</p>
-                                            <a href=""><button className='btn btn-info'> Enrole Now </button></a>
+                                            <a href=""><button className='btn btn-info'> Enroll Now </button></a>
                                         </div>
                                         
                                     </div>

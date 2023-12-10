@@ -43,7 +43,12 @@ const Admin = () => {
                   <li className="exam_toggle ">
                     <Link to=""> <FaPen/> Model Test Exam </Link>
                       <ul className="exam"> 
-                        <li><Link href="" > <FaUserGraduate/> BCS</Link> </li>
+                        <li className="bcs"> <FaUserGraduate/> BCS
+                          <ul className="bcs-list">
+                            <li className="bcs-list-item"> <Link to=""> Add new</Link> </li>
+                            <li className="bcs-list-item"> <Link to=""> All questions</Link> </li>
+                          </ul>
+                        </li>
                         <li><Link href=""> <FaLandmark/> University Admission</Link></li>
                         <li><Link href=""><IoBagSharp/> Primary Job</Link></li>
                         <li><Link href=""> <FaRegUser/> HSC Academic</Link></li>

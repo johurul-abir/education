@@ -1,6 +1,7 @@
 
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import './Hsc.scss';
+import HscScience from '../hsc-science/HscScience';
 //const books = "../../assets/images/books.png"
 
 const Hsc = () => {
@@ -15,7 +16,7 @@ const Hsc = () => {
                     </div>
                     <div className="header-menu-2">
                         <ul>
-                            <li className={location.pathname ==="/hsc/science" ? "active" : ""}><Link to ="science" >Science</Link ></li>
+                            <li className={location.pathname ==="/hsc/science" || location.pathname ==="/hsc" ? "active" : ""}><Link to ="science" >Science</Link ></li>
 
                             <li className={location.pathname ==="/hsc/commerce" ? "active" : ""} ><Link to ="commerce" >Commerce</Link></li>
 
@@ -26,7 +27,11 @@ const Hsc = () => {
 
                 </div>
             </div>
-            <Outlet/>
+            {
+                location.pathname === "/hsc" ? <HscScience/> : <Outlet/>
+            }
+
+            
         </div>
     </>
   )

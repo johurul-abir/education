@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 const Layouts = () => {
 
   const location = useLocation()
-  console.log(location)
+
   
 
   return (

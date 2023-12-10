@@ -50,8 +50,24 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
+        
       </div>
+
+
+      <div className="contact-footer">
+        <div className="container">
+          <div className="row">
+            <hr />
+            <div className="col-md-6">
+              <div className="google">
+             
+              </div>
+            </div>
+            <div className="col-md-6"></div>
+          </div>
+        </div>
+      </div>
+      
     </div>
 
 
